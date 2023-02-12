@@ -257,7 +257,7 @@ article.active {
 
 .has-scrollbar::-webkit-scrollbar {
   width: 5px; /* for vertical scrollbar */
-  height: 5px; /* for horizontal scrollbar */
+  height: 10px; /* for horizontal scrollbar */
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
@@ -750,7 +750,7 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  width: 60%;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
@@ -1883,4 +1883,30 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill img {
+  font-size: 36px;
+  color: #6bfffd;
+  margin-bottom: 10px;
+}
+
+.skill h3 {
+  font-size: 18px;
+  color: var(--white-2);
 }
