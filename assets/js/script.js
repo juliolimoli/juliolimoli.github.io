@@ -134,6 +134,13 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+formBtn.addEventListener("click", function() {
+  if (formBtn.getAttribute("disabled") === null) {
+    let text = encodeURIComponent(formInputs[0].value)
+    let link = "https://api.whatsapp.com/send/?phone=5519988456979&text="+text
+    window.open(link, "_blank");
+  }
+});
 
 
 // page navigation variables
